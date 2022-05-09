@@ -21,6 +21,8 @@ import android.widget.TextView;
 import com.cleanup.todoc.R;
 import com.cleanup.todoc.model.Project;
 import com.cleanup.todoc.model.Task;
+import com.cleanup.todoc.ui.viewModel.MainViewModel;
+import com.cleanup.todoc.ui.viewModel.ViewModelFactory;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -237,7 +239,7 @@ public class MainActivity extends AppCompatActivity implements TasksAdapter.Dele
                     Collections.sort(tasks, new Task.TaskRecentComparator());
                     break;
                 case OLD_FIRST:
-                    Collections.sort(tasks, new Task.TaskOldComparator());
+                    Collections.sort(tasks, new Task.   TaskOldComparator());
                     break;
 
             }
